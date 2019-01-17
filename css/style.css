@@ -73,7 +73,7 @@ a {
   justify-content: flex-start;
   align-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 16px;
 }
 .card img {
   height: auto;
@@ -87,12 +87,14 @@ a {
 .card p {
   color: grey;
   margin-bottom: 0px;
+  padding-left: 7px;
+  padding-right: 7px;
 }
 
 /*Welcome - About us
 -----*/
 .welcome {
-  padding: 1rem;
+  padding: 2rem;
 }
 .welcome h1 {
   color:#10b285;
@@ -141,6 +143,14 @@ footer a{
   color:#E4553B;
 }
 
+
+/*-------------------------------
+Services page
+------------------------
+--------------------------------*/
+.services-page {
+  width: 100%;
+}
 
 /*-------------------------------
 Small Devices 600px or smaller
@@ -194,7 +204,7 @@ Small Devices 600px or smaller
       align-items: center;
     }
     nav a:hover {
-      background: blue;
+      background: #10b285;
       color: white;
     }
     nav a#openup {
@@ -315,7 +325,7 @@ Portrait Tablets or devices 600px or larger
       align-items: center;
     }
     nav a:hover {
-      background: blue;
+      background: #10b285;
       color: white;
     }
     nav a#openup {
@@ -427,6 +437,15 @@ Portrait Tablets or devices 600px or larger
   /*Hides menu icon on larger screens*/
   nav a#openup {
     display: none;
+  }
+
+  /*Card
+  ------*/
+  .feature-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    max-width: 100%;
   }
 }
 
