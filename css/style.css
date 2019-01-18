@@ -19,15 +19,18 @@ General
 -------
 -------------------*/
 
-/*uppercase welcome and card title (h3)*/
+/*uppercase h1, welcome and card title (h3)*/
 h1, .card h3 {
   text-transform: uppercase;
 }
 
+/*Font and text*/
 h1, h2 {
   font-family: 'Poiret One', cursive;
 }
-
+h1 {
+  font-size: 3.3rem;
+}
 p, h3 {
   font-family: 'Ubuntu', sans-serif;
 }
@@ -46,6 +49,11 @@ a {
 .sm-icons {
   text-align: center;
 }
+.sm-icons a {
+  width: 64px;
+  height: 64px;
+}
+
 
 /*Landing Area
 --------*/
@@ -94,7 +102,7 @@ a {
 /*Welcome - About us
 -----*/
 .welcome {
-  padding: 2rem;
+  padding: 1rem;
 }
 .welcome h1 {
   color:#10b285;
@@ -262,6 +270,12 @@ Small Devices 600px or smaller
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
   }
+
+  /*---
+  ---Welcome*/
+  .welcome h1 {
+    font-size: 2.2rem;
+  }
 }
 
 
@@ -383,6 +397,12 @@ Portrait Tablets or devices 600px or larger
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
   }
+
+  /*welcome
+  --------*/
+  .welcome {
+    padding: 2rem;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -398,6 +418,7 @@ Portrait Tablets or devices 600px or larger
   }
   .logo {
     padding: 15px;
+    padding-left: 1.5rem;
     width: 80%;
   }
   .logo img {
@@ -413,6 +434,7 @@ Portrait Tablets or devices 600px or larger
     flex-direction: column;
     padding: 0px;
     padding-top: 15px;
+    align-items: center;
   }
 
   /*Nav
@@ -429,8 +451,8 @@ Portrait Tablets or devices 600px or larger
   }
   nav li a {
     text-align: center;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
     color: grey;
     background-color: #fff;
   }
@@ -446,13 +468,46 @@ Portrait Tablets or devices 600px or larger
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     max-width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  /*welcome
+  -------*/
+  .welcome p, h1{
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
 @media only screen and (min-width: 992px) {
   /*---------
   Laptops and Desktops
-  ---------*/
+
+
+  /*Header
+  ----------*/
+  .logo {
+    width: 60%;
+    padding-left: 2rem;
+  }
+
+  /*Social links*/
+  .sm-icons {
+    text-align: center;
+    width: 40%;
+    flex-direction: row;
+    padding: 0px;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  /*NAV
+  ----*/
+  nav a {
+    font-size: 1.2rem;
+  }
+
 }
 
 @media only screen and (min-width: 1200px) {
