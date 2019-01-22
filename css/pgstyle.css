@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One|Ubuntu');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  min-height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  border-top: solid 2px grey;
+}
+
+
+/*-------------------
+General
+-------
+-------------------*/
+
+/*uppercase h1, h2, h3*/
+h1, h2, h3 {
+  text-transform: uppercase;
+}
+
+/*Font and text
+-----------*/
+h1, h2 {
+  font-family: 'Poiret One', cursive;
+}
+h1 {
+  font-size: 3.3rem;
+}
+p, h3 {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/*Header
+---------*/
+/*Padding around Logo image*/
+.logo {
+  padding: 5px;
+}
+/*Social Links*/
+.sm-icons {
+  text-align: center;
+}
+.sm-icons a {
+  width: 64px;
+  height: 64px;
+}
+
+
+/*Location - find us
+  -----*/
+.location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: grey;
+  border-top: dotted 1px grey;
+}
+.location h2 {
+  text-align: center;
+  font-size: 3rem;
+  color: #348757;
+  margin-bottom: 0px;
+}
+.location p {
+  margin: 0px;
+  font-size: 2rem;
+}
+
+
+/*Footer
+-------*/
+footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 22px;
+}
+/*Links*/
+footer a{
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-bottom: 2px;
+  text-decoration: none;
+  color:#E4553B;
+}
+
+
+
+/*-------------------------------
+Services page
+------------------------
+--------------------------------*/
+.services-page {
+  width: 100%;
+}
+
+
+
+/*-------------------------------
+Small Devices 600px or smaller
+------------------------
+--------------------------------*/
+@media only screen and (max-width: 600px) {
+  /*Header Area
+  ----*/
+  header {
+    width: 100%;
+  }
+  .logo img {
+    width: 100%;
+    height: auto;
+  }
+
+
+  /*Nav
+  -------*/
+    nav {
+      height: 40px;
+      width: 100%;
+      color: black;
+      border-bottom: 0;
+      background-color: #fff;
+    }
+    nav ul {
+      display: none;
+      height: auto;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav li {
+      width: 100%;
+      float: left;
+      position: relative;
+      height: 40px;
+      border-bottom: solid 2px 	#007081;
+    }
+    nav a {
+      text-align: left;
+      max-width: 100%;
+      height: 100%;
+      text-decoration: none;
+      background: #555555;
+      padding-left: 25px;
+      color: white;
+      /*vertically aligns text*/
+      display: flex;
+      align-items: center;
+    }
+    nav a:hover {
+      background: #10b285;
+      color: white;
+    }
+    nav a#openup {
+      display: block;
+      background-color: #fff;
+      width: auto;
+      position: relative;
+    }
+    nav a#openup:after {
+      background-color: #fff;
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+      position: absolute;
+      right: 5px;
+      top: 20px;
+    }
+    .hlsnav:before, .hlsnav:after {
+      content: "";
+      display: table;
+    }
+    .hlsnav:after {
+      clear: both;
+    }
+    .hlsnav {
+      zoom: 1;
+    }
+
+
+  /*Menu Icon - Animates 3 bars to X
+  -------*/
+  .menu-animate {
+      display: inline-block;
+      cursor: pointer;
+  }
+    /*Bars*/
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333333;
+    margin: 6px 0;
+    transition: 0.6s;
+  }
+    /*Moves first bar*/
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+    /*Fades second bar*/
+  .change .bar2 {
+    opacity: 0;
+  }
+    /*Moves third bar*/
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+
+
+  /* -----------------------------------------
+  Portrait Tablets or devices 600px or larger
+  ------------------------
+  ------------------------------------------- */
+  @media only screen and (min-width: 600px) {
+    /*Header Area
+    -----*/
+    header {
+      width: 100%;
+    }
+    .logo {
+      padding: 15px;
+    }
+    .logo img {
+      width: 100%;
+      height: auto;
+    }
+    /*Social links
+    ----------*/
+    .sm-icons {
+      text-align: right;
+      padding-right: 10px;
+    }
+
+    /*Nav
+    ------*/
+      nav {
+        height: 40px;
+        width: 100%;
+        color: black;
+        border-bottom: 0;
+        background-color: #fff;
+      }
+      nav ul {
+        display: none;
+        height: auto;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      nav li {
+        width: 100%;
+        float: left;
+        position: relative;
+        height: 40px;
+        border-bottom: solid 2px 	#007081;
+      }
+      nav a {
+        text-align: left;
+        max-width: 100%;
+        height: 100%;
+        text-decoration: none;
+        background: #555555;
+        padding-left: 25px;
+        color: white;
+        /*vertically aligns text*/
+        display: flex;
+        align-items: center;
+      }
+      nav a:hover {
+        background: #10b285;
+        color: white;
+      }
+      nav a#openup {
+        display: block;
+        background-color: #fff;
+        width: auto;
+        position: relative;
+      }
+      nav a#openup:after {
+        background-color: #fff;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 5px;
+        top: 20px;
+      }
+      .hlsnav:before, .hlsnav:after {
+        content: "";
+        display: table;
+      }
+      .hlsnav:after {
+        clear: both;
+      }
+      .hlsnav {
+        zoom: 1;
+      }
+
+
+    /*Menu Icon - Animates 3 bars to X
+    -----*/
+    .menu-animate {
+        display: inline-block;
+        cursor: pointer;
+    }
+      /*Bars*/
+    .bar1, .bar2, .bar3 {
+      width: 35px;
+      height: 5px;
+      background-color: #333;
+      margin: 6px 0;
+      transition: 0.6s;
+    }
+      /*Moves first bar*/
+    .change .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+      transform: rotate(-45deg) translate(-9px, 6px);
+    }
+      /*Fades second bar*/
+    .change .bar2 {
+      opacity: 0;
+    }
+      /*Moves third bar*/
+    .change .bar3 {
+      -webkit-transform: rotate(45deg) translate(-8px, -8px);
+      transform: rotate(45deg) translate(-8px, -8px);
+    }
+  }
+
+
+
+  @media only screen and (min-width: 768px) {
+    /* -------
+    Landscape Tablets or Medium devices 768px or larger
+    -------- */
+
+    /*Header
+    ----------*/
+    header {
+      display: flex;
+      flex-direction: row;
+    }
+    .logo {
+      padding: 15px;
+      padding-left: 1.5rem;
+      width: 80%;
+    }
+    .logo img {
+      width: 100%;
+      height: auto;
+      text-align: left;
+    }
+    /*Social links*/
+    .sm-icons {
+      text-align: center;
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      padding: 0px;
+      padding-top: 15px;
+      align-items: center;
+    }
+
+    /*Nav
+    ------*/
+    nav {
+      background-color: #fff;
+    }
+    nav ul {
+      display: block;
+    }
+    nav li {
+      width: auto;
+      float: left;
+    }
+    nav li a {
+      text-align: center;
+      padding-left: 10px;
+      padding-right: 10px;
+      color: grey;
+      background-color: #fff;
+    }
+    /*Hides menu icon on larger screens*/
+    nav a#openup {
+      display: none;
+    }
+
+
+
+    @media only screen and (min-width: 992px) {
+      /*---------
+      Laptops and Desktops
+      ------*/
+
+      /*Header
+      ----------*/
+      .logo {
+        width: 60%;
+        padding-left: 2rem;
+      }
+
+      /*Social links*/
+      .sm-icons {
+        text-align: center;
+        width: 40%;
+        flex-direction: row;
+        padding: 0px;
+        align-items: center;
+        justify-content: space-around;
+      }
+      
+
+      /*NAV
+      ----*/
+      nav a {
+        font-size: 1.2rem;
+      }
+    }
+
+
+
+    @media only screen and (min-width: 1200px) {
+      /*--------
+      Extra large devices
+      --------*/
+    }
