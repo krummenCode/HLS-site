@@ -31,11 +31,20 @@ h1, h2 {
 }
 h1 {
   font-size: 3.3rem;
+  color: #10b285;
+}
+h2 {
+  color: #E4553B;
+}
+h3 {
+  color: #10b285;
 }
 p, h3 {
   font-family: 'Ubuntu', sans-serif;
 }
-
+p {
+  color: grey;
+}
 a {
   font-family: 'Ubuntu', sans-serif;
 }
@@ -104,7 +113,8 @@ Services page
 ------------------------
 --------------------------------*/
 .services-page {
-  width: 100%;
+  max-width: 100%;
+  padding: 1rem;
 }
 
 
@@ -127,6 +137,127 @@ Small Devices 600px or smaller
 
   /*Nav
   -------*/
+  nav {
+    height: 40px;
+    width: 100%;
+    color: black;
+    border-bottom: 0;
+    background-color: #fff;
+  }
+  nav ul {
+    display: none;
+    height: auto;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav li {
+    width: 100%;
+    float: left;
+    position: relative;
+    height: 40px;
+    border-bottom: solid 2px 	#007081;
+  }
+  nav a {
+    text-align: left;
+    max-width: 100%;
+    height: 100%;
+    text-decoration: none;
+    background: #555555;
+    padding-left: 25px;
+    color: white;
+    /*vertically aligns text*/
+    display: flex;
+    align-items: center;
+  }
+  nav a:hover {
+    background: #10b285;
+    color: white;
+  }
+  nav a#openup {
+    display: block;
+    background-color: #fff;
+    width: auto;
+    position: relative;
+  }
+  nav a#openup:after {
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    top: 20px;
+  }
+  .hlsnav:before, .hlsnav:after {
+    content: "";
+    display: table;
+  }
+  .hlsnav:after {
+    clear: both;
+  }
+  .hlsnav {
+    zoom: 1;
+  }
+
+
+  /*Menu Icon - Animates 3 bars to X
+  -------*/
+  .menu-animate {
+    display: inline-block;
+    cursor: pointer;
+  }
+    /*Bars*/
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333333;
+    margin: 6px 0;
+    transition: 0.6s;
+  }
+    /*Moves first bar*/
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+    /*Fades second bar*/
+  .change .bar2 {
+    opacity: 0;
+  }
+    /*Moves third bar*/
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+}
+
+
+  /* -----------------------------------------
+  Portrait Tablets or devices 600px or larger
+  ------------------------
+  ------------------------------------------- */
+  @media only screen and (min-width: 600px) {
+    /*Header Area
+    -----*/
+    header {
+      width: 100%;
+    }
+    .logo {
+      padding: 15px;
+    }
+    .logo img {
+      width: 100%;
+      height: auto;
+    }
+    /*Social links
+    ----------*/
+    .sm-icons {
+      text-align: right;
+      padding-right: 10px;
+    }
+
+    /*Nav
+    ------*/
     nav {
       height: 40px;
       width: 100%;
@@ -191,132 +322,11 @@ Small Devices 600px or smaller
     }
 
 
-  /*Menu Icon - Animates 3 bars to X
-  -------*/
-  .menu-animate {
-      display: inline-block;
-      cursor: pointer;
-  }
-    /*Bars*/
-  .bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #333333;
-    margin: 6px 0;
-    transition: 0.6s;
-  }
-    /*Moves first bar*/
-  .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-  }
-    /*Fades second bar*/
-  .change .bar2 {
-    opacity: 0;
-  }
-    /*Moves third bar*/
-  .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
-  }
-
-
-
-  /* -----------------------------------------
-  Portrait Tablets or devices 600px or larger
-  ------------------------
-  ------------------------------------------- */
-  @media only screen and (min-width: 600px) {
-    /*Header Area
-    -----*/
-    header {
-      width: 100%;
-    }
-    .logo {
-      padding: 15px;
-    }
-    .logo img {
-      width: 100%;
-      height: auto;
-    }
-    /*Social links
-    ----------*/
-    .sm-icons {
-      text-align: right;
-      padding-right: 10px;
-    }
-
-    /*Nav
-    ------*/
-      nav {
-        height: 40px;
-        width: 100%;
-        color: black;
-        border-bottom: 0;
-        background-color: #fff;
-      }
-      nav ul {
-        display: none;
-        height: auto;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-      }
-      nav li {
-        width: 100%;
-        float: left;
-        position: relative;
-        height: 40px;
-        border-bottom: solid 2px 	#007081;
-      }
-      nav a {
-        text-align: left;
-        max-width: 100%;
-        height: 100%;
-        text-decoration: none;
-        background: #555555;
-        padding-left: 25px;
-        color: white;
-        /*vertically aligns text*/
-        display: flex;
-        align-items: center;
-      }
-      nav a:hover {
-        background: #10b285;
-        color: white;
-      }
-      nav a#openup {
-        display: block;
-        background-color: #fff;
-        width: auto;
-        position: relative;
-      }
-      nav a#openup:after {
-        background-color: #fff;
-        width: 30px;
-        height: 30px;
-        display: inline-block;
-        position: absolute;
-        right: 5px;
-        top: 20px;
-      }
-      .hlsnav:before, .hlsnav:after {
-        content: "";
-        display: table;
-      }
-      .hlsnav:after {
-        clear: both;
-      }
-      .hlsnav {
-        zoom: 1;
-      }
-
-
     /*Menu Icon - Animates 3 bars to X
     -----*/
     .menu-animate {
-        display: inline-block;
-        cursor: pointer;
+      display: inline-block;
+      cursor: pointer;
     }
       /*Bars*/
     .bar1, .bar2, .bar3 {
@@ -399,7 +409,7 @@ Small Devices 600px or smaller
     nav a#openup {
       display: none;
     }
-
+  }
 
 
     @media only screen and (min-width: 992px) {
@@ -423,7 +433,7 @@ Small Devices 600px or smaller
         align-items: center;
         justify-content: space-around;
       }
-      
+
 
       /*NAV
       ----*/
