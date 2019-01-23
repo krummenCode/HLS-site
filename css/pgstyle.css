@@ -31,7 +31,7 @@ h1, h2 {
   font-family: 'Poiret One', cursive;
 }
 /*Ubuntu Font*/
-p, h3, a {
+p, h3, a, .gc-list {
   font-family: 'Ubuntu', sans-serif;
 }
 /*Color*/
@@ -45,7 +45,7 @@ h2 {
 h3 {
   color: #10b285;
 }
-p {
+p, .gc-list {
   color: grey;
 }
 /*Click Here - booking buttons*/
