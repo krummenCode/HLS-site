@@ -48,6 +48,10 @@ h3 {
 p, .gc-list {
   color: grey;
 }
+.nav-page a {
+  color: #E4553B;
+  text-decoration: none;
+}
 /*Click Here - booking buttons*/
 .clkhere {
   text-decoration: none;
@@ -60,7 +64,7 @@ p, .gc-list {
 }
 /*Bold class*/
 .bold {
-  font-weight: bold;d
+  font-weight: bold;
 }
 /*Header
 ---------*/
@@ -126,6 +130,22 @@ Services page
 ------------------------
 --------------------------------*/
 
+/*-------------------------------
+Products page
+------------------------
+--------------------------------*/
+.products-menu {
+  padding: 0px;
+  margin: 0px;
+}
+.products-menu li {
+  list-style: none;
+}
+.products-menu a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #E4553B;
+}
 
 
 
