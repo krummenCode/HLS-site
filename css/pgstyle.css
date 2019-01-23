@@ -72,6 +72,21 @@ p, .gc-list {
   font-weight: bold;
 }
 
+/*Inpage-menu
+-----*/
+.inpage-menu {
+  padding: 0px;
+  margin: 0px;
+}
+.inpage-menu li {
+  list-style: none;
+}
+.inpage-menu a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #E4553B;
+}
+
 /*Header
 ---------*/
 /*Padding around Logo image*/
@@ -140,18 +155,6 @@ Services page
 Products page
 ------------------------
 --------------------------------*/
-.products-menu {
-  padding: 0px;
-  margin: 0px;
-}
-.products-menu li {
-  list-style: none;
-}
-.products-menu a {
-  text-decoration: none;
-  font-size: 2rem;
-  color: #E4553B;
-}
 
 
 
