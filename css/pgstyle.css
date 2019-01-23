@@ -34,7 +34,9 @@ h1, h2 {
 p, h3, a, .gc-list {
   font-family: 'Ubuntu', sans-serif;
 }
-/*Color*/
+
+/*Color
+-------*/
 h1 {
   font-size: 3.3rem;
   color: #10b285;
@@ -52,20 +54,24 @@ p, .gc-list {
   color: #E4553B;
   text-decoration: none;
 }
+
 /*Click Here - booking buttons*/
 .clkhere {
   text-decoration: none;
   font-weight: bold;
   color: #E4553B;
 }
+
 /*Italicize class*/
 .italicize {
   font-style: italic;
 }
+
 /*Bold class*/
 .bold {
   font-weight: bold;
 }
+
 /*Header
 ---------*/
 /*Padding around Logo image*/
