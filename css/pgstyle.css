@@ -26,9 +26,15 @@ h1, h2, h3 {
 
 /*Font and text
 -----------*/
+/*Poiret One Font*/
 h1, h2 {
   font-family: 'Poiret One', cursive;
 }
+/*Ubuntu Font*/
+p, h3, a {
+  font-family: 'Ubuntu', sans-serif;
+}
+/*Color*/
 h1 {
   font-size: 3.3rem;
   color: #10b285;
@@ -39,16 +45,23 @@ h2 {
 h3 {
   color: #10b285;
 }
-p, h3 {
-  font-family: 'Ubuntu', sans-serif;
-}
 p {
   color: grey;
 }
-a {
-  font-family: 'Ubuntu', sans-serif;
+/*Click Here - booking buttons*/
+.clkhere {
+  text-decoration: none;
+  font-weight: bold;
+  color: #E4553B;
 }
-
+/*Italicize class*/
+.italicize {
+  font-style: italic;
+}
+/*Bold class*/
+.bold {
+  font-weight: bold;d
+}
 /*Header
 ---------*/
 /*Padding around Logo image*/
@@ -112,10 +125,7 @@ footer a{
 Services page
 ------------------------
 --------------------------------*/
-.services-page {
-  max-width: 100%;
-  padding: 1rem;
-}
+
 
 
 
@@ -124,6 +134,12 @@ Small Devices 600px or smaller
 ------------------------
 --------------------------------*/
 @media only screen and (max-width: 600px) {
+  /*container
+  --------*/
+  .nav-page {
+    max-width: 100%;
+    padding: 1rem;
+  }
   /*Header Area
   ----*/
   header {
@@ -237,6 +253,11 @@ Small Devices 600px or smaller
   ------------------------
   ------------------------------------------- */
   @media only screen and (min-width: 600px) {
+    /*container
+    --------*/
+    .nav-page {
+      padding: 2rem;
+    }
     /*Header Area
     -----*/
     header {
