@@ -208,9 +208,9 @@ Small Devices 600px or smaller
     max-width: 100%;
     height: 100%;
     text-decoration: none;
-    background: #555555;
+    background: #fff;
     padding-left: 25px;
-    color: white;
+    color: black;
     /*vertically aligns text*/
     display: flex;
     align-items: center;
@@ -334,9 +334,9 @@ Small Devices 600px or smaller
       max-width: 100%;
       height: 100%;
       text-decoration: none;
-      background: #555555;
+      background: #fff;
       padding-left: 25px;
-      color: white;
+      color: black;
       /*vertically aligns text*/
       display: flex;
       align-items: center;

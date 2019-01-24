@@ -31,14 +31,9 @@ h1, h2 {
 h1 {
   font-size: 3.3rem;
 }
-p, h3 {
+p, h3, a {
   font-family: 'Ubuntu', sans-serif;
 }
-
-a {
-  font-family: 'Ubuntu', sans-serif;
-}
-
 
 /*Header
 ---------*/
@@ -55,7 +50,6 @@ a {
   height: 64px;
 }
 
-
 /*Landing Area
 --------*/
 .landing-img {
@@ -66,7 +60,6 @@ a {
   width: 100%;
   height: auto;
 }
-
 
 /*Card
 ------*/
@@ -101,7 +94,6 @@ a {
   padding-right: 7px;
 }
 
-
 /*Welcome - About us
 -----*/
 .welcome {
@@ -113,7 +105,6 @@ a {
 .welcome p {
   color: grey;
 }
-
 
 /*Location - find us
   -----*/
@@ -135,7 +126,6 @@ a {
   margin: 0px;
   font-size: 2rem;
 }
-
 
 /*Footer
 -------*/
@@ -202,9 +192,9 @@ Small Devices 600px or smaller
       max-width: 100%;
       height: 100%;
       text-decoration: none;
-      background: #555555;
+      background: #fff;
       padding-left: 25px;
-      color: white;
+      color: black;
       /*vertically aligns text*/
       display: flex;
       align-items: center;
@@ -332,9 +322,9 @@ Portrait Tablets or devices 600px or larger
       max-width: 100%;
       height: 100%;
       text-decoration: none;
-      background: #555555;
+      background: #fff;
       padding-left: 25px;
-      color: white;
+      color: black;
       /*vertically aligns text*/
       display: flex;
       align-items: center;
@@ -493,6 +483,14 @@ Portrait Tablets or devices 600px or larger
   /*---------
   Laptops and Desktops
   ------*/
+
+  /*padding
+  -----*/
+  .lrg-margin {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 991px;
+  }
 
   /*Header
   ----------*/
