@@ -499,6 +499,12 @@ Portrait Tablets or devices 600px or larger
     padding-left: 2rem;
   }
 
+  header {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 991px;
+  }
+
   /*Social links*/
   .sm-icons {
     text-align: center;
@@ -512,8 +518,38 @@ Portrait Tablets or devices 600px or larger
 
   /*NAV
   ----*/
+  nav {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 991px;
+  }
+
   nav a {
     font-size: 1.2rem;
+  }
+
+  /*Feature cards
+  ------*/
+  .feature-cards {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 991px;
+  }
+
+  /*Welcome
+  ----*/
+  .welcome {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 991px;
+  }
+
+  /*footer
+  -----*/
+  footer {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 991px;
   }
 }
 
