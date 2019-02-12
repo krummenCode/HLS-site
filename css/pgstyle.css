@@ -152,6 +152,7 @@ footer a{
   flex-direction: column;
   margin: 0px;
 }
+/*margin for text*/
 .artist-card p, h2 {
   margin: 4px;
 }
@@ -479,6 +480,21 @@ Small Devices 600px or smaller
     nav a#openup {
       display: none;
     }
+
+    /*Our Artist
+    -------------*/
+    .artist-card {
+      display: flex;
+      flex-direction: row;
+      margin: 0px;
+    }
+    /*Next Two styles level artist h2 and image*/
+    .artist-text {
+      padding-top: 1rem;
+    }
+    .artist-card h2 {
+      margin-top: 0px;
+    }
   }
 
 
@@ -510,7 +526,6 @@ Small Devices 600px or smaller
         justify-content: space-around;
       }
 
-
       /*NAV
       ----*/
       nav a {
@@ -537,6 +552,14 @@ Small Devices 600px or smaller
         margin-left: auto;
         margin-right: auto;
         max-width: 991px;
+      }
+
+      /*Our Artist
+      -------------*/
+      /*Portrait images*/
+      .portrait img {
+        max-width: 75%;
+        height: auto;
       }
     }
 
