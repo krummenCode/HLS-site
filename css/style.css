@@ -116,6 +116,17 @@ p, h3, a {
   color: grey;
   border-top: dotted 1px grey;
 }
+/*HLS Logo*/
+.hls-logo {
+  max-width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.hls-logo img {
+  max-width: 100%;
+  height: auto;
+}
 .location h2 {
   text-align: center;
   font-size: 3rem;
